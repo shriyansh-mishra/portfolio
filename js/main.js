@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const loadingText = document.querySelector('.loading-text');
     let progress = 0;
 
-    // Simulate loading progress
+    // Faster loading animation
     const interval = setInterval(() => {
-        progress += Math.random() * 10;
+        progress += Math.random() * 20; // Increased increment for faster loading
         if (progress >= 100) {
             progress = 100;
             clearInterval(interval);
@@ -15,12 +15,39 @@ document.addEventListener('DOMContentLoaded', () => {
                 loadingScreen.style.opacity = '0';
                 setTimeout(() => {
                     loadingScreen.style.display = 'none';
-                }, 500);
-            }, 500);
+                }, 300);
+            }, 300);
         }
         progressBar.style.width = `${progress}%`;
         loadingText.textContent = `Loading... ${Math.floor(progress)}%`;
-    }, 200);
+    }, 100); // Reduced interval for smoother animation
+
+    // Scroll fade animation
+    const fadeElements = document.querySelectorAll('.section, .project-card, .skill-card, .contact-form-card');
+    
+    const fadeInOnScroll = () => {
+        fadeElements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const elementVisible = 150;
+            
+            if (elementTop < window.innerHeight - elementVisible) {
+                element.style.opacity = '1';
+                element.style.transform = 'translateY(0)';
+            }
+        });
+    };
+
+    // Set initial styles for fade elements
+    fadeElements.forEach(element => {
+        element.style.opacity = '0';
+        element.style.transform = 'translateY(20px)';
+        element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    });
+
+    // Add scroll event listener
+    window.addEventListener('scroll', fadeInOnScroll);
+    // Initial check for elements in view
+    fadeInOnScroll();
 
     // Smooth scroll for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
