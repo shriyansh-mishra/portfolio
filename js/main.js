@@ -1,13 +1,11 @@
-// Loading Animation
 document.addEventListener('DOMContentLoaded', () => {
     const loadingScreen = document.querySelector('.loading-screen');
     const progressBar = document.querySelector('.progress');
     const loadingText = document.querySelector('.loading-text');
     let progress = 0;
 
-    // Faster loading animation
     const interval = setInterval(() => {
-        progress += Math.random() * 20; // Increased increment for faster loading
+        progress += Math.random() * 20; 
         if (progress >= 100) {
             progress = 100;
             clearInterval(interval);
@@ -20,9 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         progressBar.style.width = `${progress}%`;
         loadingText.textContent = `Loading... ${Math.floor(progress)}%`;
-    }, 100); // Reduced interval for smoother animation
+    }, 100); 
 
-    // Scroll fade animation
     const fadeElements = document.querySelectorAll('.section, .project-card, .skill-card, .contact-form-card');
     
     const fadeInOnScroll = () => {
@@ -37,19 +34,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // Set initial styles for fade elements
     fadeElements.forEach(element => {
         element.style.opacity = '0';
         element.style.transform = 'translateY(20px)';
         element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     });
 
-    // Add scroll event listener
     window.addEventListener('scroll', fadeInOnScroll);
-    // Initial check for elements in view
     fadeInOnScroll();
 
-    // Smooth scroll for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -63,7 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Navbar scroll effect
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -73,7 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Back to Top Button
     const backToTopButton = document.getElementById('back-to-top');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 300) {
@@ -90,7 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Mobile Menu
     const mobileMenu = document.querySelector('.mobile-menu');
     const navLinks = document.querySelector('.nav-links');
     
@@ -98,7 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
     });
 
-    // Form Animation
     const formGroups = document.querySelectorAll('.form-group');
     formGroups.forEach(group => {
         const input = group.querySelector('input, textarea');
@@ -113,18 +102,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 label.classList.remove('active');
             }
         });
-
-        // Check if input has value on load
         if (input.value) {
             label.classList.add('active');
         }
     });
 
-    // Contact Form Submission
     const contactForm = document.getElementById('contact-form');
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        // Add your form submission logic here
         alert('Thank you for your message! I will get back to you soon.');
         contactForm.reset();
     });
