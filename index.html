@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer Portfolio</title>
     <link rel="stylesheet" href="styles/main.css">
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <!-- Loading Screen -->
-    <div class="loading-screen">
+     <!-- Loading Screen -->
+     <div class="loading-screen">
         <div class="progress-bar">
             <div class="progress"></div>
         </div>
@@ -52,7 +50,7 @@
                         <a href="https://github.com/shriyansh-mishra" target="_blank">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/shriyansh-mishra-281919225/" target="_blank">
+                        <a href="https://www.linkedin.com/in/shriyansh-mishra-281919225" target="_blank">
                             <i class="fab fa-linkedin"></i>
                         </a>
                     </div>
@@ -70,16 +68,19 @@
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <h3>Project Title 1</h3>
-                    <p>Project description will go here.</p>
+                    <img src="assets/Project1_ss.png" alt="AI Resume Analyzer Screenshot" class="project-image">
+                    <h3>Ai Resume Analyzer</h3>
+                    <p>A full-stack web application that analyzes resumes using AI to provide actionable feedback and job recommendations. Built with React, Vite, TailwindCSS on the frontend, and Express, TypeScript, and Google Generative AI on the backend. It supports resume upload, ATS scoring, skill extraction, and real-time analysis. Deployed on Vercel (frontend) and Render (backend)</p>
                     <div class="tech-stack">
-                        <span>Tech 1</span>
-                        <span>Tech 2</span>
-                        <span>Tech 3</span>
+                        <span>React</span>
+                        <span>Type Script</span>
+                        <span>Tailwind CSS</span>
+                        <span>Express.js</span>
+                        <span>Google generative AI</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" target="_blank">Live Demo</a>
-                        <a href="#" target="_blank">GitHub</a>
+                        <a href="https://analyzeresume.vercel.app" target="_blank">Live Preview</a>
+                        <a href="https://github.com/shriyansh-mishra/ResumeAnalyzer" target="_blank">GitHub</a>
                     </div>
                 </div>
                 <!-- Project 2 -->
@@ -250,17 +251,15 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Shriyansh Mishra. All rights reserved.</p>
+                <p>&copy; 2024 Made with ❤️ by Shriyansh Mishra</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="js/main.js"></script>
-    <!-- EmailJS SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
-        emailjs.init("MoTZ0iY3paYZ3B-M1"); // Replace with your actual User ID
+        emailjs.init("MoTZ0iY3paYZ3B-M1");
     </script>
     <script src="js/contact.js"></script>
 </body>
