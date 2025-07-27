@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Portfolio</title>
+    <title>Shriyansh Mishra - Software Engineer</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 </head>
 
@@ -24,10 +24,12 @@
     <nav class="navbar">
         <div class="logo">Portfolio</div>
         <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="tech-stack.html">Tech Stack</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="assets/resume.pdf" download>Resume</a></li>
         </ul>
         <div class="mobile-menu">
             <i class="fas fa-bars"></i>
@@ -36,232 +38,55 @@
 
     <!-- Main Content -->
     <main>
-        <!-- About Section -->
-        <section id="about" class="section">
-            <div class="about-container">
-                <div class="about-text">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-text">
                     <h1>Shriyansh Mishra</h1>
                     <h3>Software Engineer</h3>
                     <blockquote>
                         "Passionate about creating elegant solutions to complex problems.
                         Always learning, always growing."
                     </blockquote>
-                    <div class="social-links">
-                        <a href="https://github.com/shriyansh-mishra" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/shriyansh-mishra-281919225" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
+                    <div class="hero-actions">
+                        <div class="hero-buttons">
+                            <a href="projects.html" class="btn btn-secondary">
+                                <i class="fas fa-briefcase"></i>
+                                Projects
+                            </a>
+                            <a href="contact.html" class="btn btn-secondary">
+                                <i class="fas fa-envelope"></i>
+                                Get In Touch
+                            </a>
+                            <a href="assets/resume.pdf" class="btn btn-secondary" target="_blank">
+                                <i class="fas fa-eye"></i>
+                                Resume
+                            </a>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/shriyansh-mishra" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/shriyansh-mishra-281919225" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="profile-image">
                     <img class="cloud-img" src="/assets/cloud.png" alt="Cloud" />
-                    <img src="/assets/profile.jpg" alt="Your Name">
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <img src="assets/Project1_ss.png" alt="AI Resume Analyzer Screenshot" class="project-image">
-                    <h3>Ai Resume Analyzer</h3>
-                    <p>A full-stack web application that analyzes resumes using AI to provide actionable feedback and job recommendations. Built with React, Vite, TailwindCSS on the frontend, and Express, TypeScript, and Google Generative AI on the backend. It supports resume upload, ATS scoring, skill extraction, and real-time analysis. Deployed on Vercel (frontend) and Render (backend)</p>
-                    <div class="tech-stack">
-                        <span>React</span>
-                        <span>Type Script</span>
-                        <span>Tailwind CSS</span>
-                        <span>Express.js</span>
-                        <span>Google generative AI</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://analyzeresume.vercel.app" target="_blank">Live Preview</a>
-                        <a href="https://github.com/shriyansh-mishra/ResumeAnalyzer" target="_blank">GitHub</a>
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <h3>Project Title 2</h3>
-                    <p>Project description will go here.</p>
-                    <div class="tech-stack">
-                        <span>Tech 1</span>
-                        <span>Tech 2</span>
-                        <span>Tech 3</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" target="_blank">Live Demo</a>
-                        <a href="#" target="_blank">GitHub</a>
-                    </div>
-                </div>
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <h3>Project Title 3</h3>
-                    <p>Project description will go here.</p>
-                    <div class="tech-stack">
-                        <span>Tech 1</span>
-                        <span>Tech 2</span>
-                        <span>Tech 3</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" target="_blank">Live Demo</a>
-                        <a href="#" target="_blank">GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fab fa-python"></i>
-                    <h3>Python</h3>
-                    <p>Python development with focus on web applications, data analysis, and automation. Experienced
-                        with Django, Flask, and data science libraries.</p>
-                    <div class="skill-progress">
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 90%"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML5 & CSS3</h3>
-                    <p>Modern web development with responsive design, animations, and best practices. Strong focus on
-                        accessibility and cross-browser compatibility.</p>
-                    <div class="skill-progress">
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 95%"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-js"></i>
-                    <h3>JavaScript</h3>
-                    <p>Full-stack JavaScript development including React, Node.js, and modern ES6+ features. Experience
-                        with REST APIs and real-time applications.</p>
-                    <div class="skill-progress">
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>Databases</h3>
-                    <p>Proficient in SQL and NoSQL databases including PostgreSQL and MongoDB. Experience with database
-                        design and optimization.</p>
-                    <div class="skill-progress">
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 80%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <h2>Contact Me</h2>
-            <div class="contact-container">
-                <div class="contact-form-card">
-                    <form id="contact-form">
-                        <input type="hidden" name="to_name" value="Shriyansh Mishra" />
-
-                        <div class="form-group">
-                            <input type="text" id="name" name="from_name" required />
-                            <label for="name">Name</label>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="email" id="email" name="from_email" required />
-                            <label for="email">Email</label>
-                        </div>
-
-                        <div class="form-group">
-                            <textarea id="message" name="message" required></textarea>
-                            <label for="message">Message</label>
-                        </div>
-
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
-
-                    <a href="assets/resume.pdf" class="resume-btn" download>
-                        <i class="fas fa-download"></i> Download Resume
-                    </a>
-                </div>
-
-                <div class="map-container">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28027.000000000004!2d77.48999999999999!3d28.474999999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sGreater%20Noida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1709661234567!5m2!1sen!2sin"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <img src="/assets/profile.jpg" alt="Shriyansh Mishra">
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-background"></div>
-        <div class="footer-content">
-            <div class="footer-grid">
-                <div class="footer-section">
-                    <h3>Contact Info</h3>
-                    <div class="contact-info">
-                        <div class="info-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+91 7303655093</span>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>mishrashriyansh70@gmail.com</span>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Greater Noida, Uttar Pradesh, India</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h3>Connect With Me</h3>
-                    <div class="social-links">
-                        <a href="https://github.com/shriyansh-mishra" target="_blank">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/shriyansh-mishra-281919225/" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                            <span>LinkedIn</span>
-                        </a>
-                        <a href="https://twitter.com/yourusername" target="_blank">
-                            <i class="fab fa-twitter"></i>
-                            <span>Twitter</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Made with ❤️ by Shriyansh Mishra</p>
-            </div>
-        </div>
-    </footer>
+    <!-- Copyright -->
+    <div class="copyright-footer">
+        <p>&copy; 2024 Made with ❤️ by Shriyansh Mishra</p>
+    </div>
 
     <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script>
-        emailjs.init("MoTZ0iY3paYZ3B-M1");
-    </script>
-    <script src="js/contact.js"></script>
 </body>
 
 </html>
