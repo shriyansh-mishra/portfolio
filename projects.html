@@ -7,7 +7,7 @@
     <title>Projects - Shriyansh Mishra</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 </head>
 
@@ -39,51 +39,147 @@
                 <div class="projects-grid">
                     <!-- Project 1 -->
                     <div class="project-card">
-                        <img src="assets/Project1_ss.png" alt="AI Resume Analyzer Screenshot" class="project-image">
-                        <h3>AI Resume Analyzer</h3>
-                        <p>A full-stack web application that analyzes resumes using AI to provide actionable feedback and job recommendations. Built with React, Vite, TailwindCSS on the frontend, and Express, TypeScript, and Google Generative AI on the backend. It supports resume upload, ATS scoring, skill extraction, and real-time analysis. Deployed on Vercel (frontend) and Render (backend)</p>
-                        <div class="tech-stack">
-                            <span>React</span>
-                            <span>TypeScript</span>
-                            <span>Tailwind CSS</span>
-                            <span>Express.js</span>
-                            <span>Google Generative AI</span>
+                        <div class="project-image-container">
+                            <img src="assets/Project1_ss.png" alt="AI Resume Analyzer Screenshot" class="project-image">
+                            <div class="project-overlay">
+                                <a href="https://analyzeresume.vercel.app" target="_blank" class="preview-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Preview
+                                </a>
+                            </div>
                         </div>
-                        <div class="project-links">
-                            <a href="https://analyzeresume.vercel.app" target="_blank">Live Preview</a>
-                            <a href="https://github.com/shriyansh-mishra/ResumeAnalyzer" target="_blank">GitHub</a>
+                        <div class="project-content">
+                            <h3>AI Resume Analyzer</h3>
+                            <p>A full-stack web application that analyzes resumes using AI to provide actionable feedback and job recommendations. Built with React, Vite, TailwindCSS on the frontend, and Express, TypeScript, and Google Generative AI on the backend. It supports resume upload, ATS scoring, skill extraction, and real-time analysis. Deployed on Vercel (frontend) and Render (backend)</p>
+                            <div class="tech-stack">
+                                <span>React</span>
+                                <span>TypeScript</span>
+                                <span>Tailwind CSS</span>
+                                <span>Express.js</span>
+                                <span>Google AI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://analyzeresume.vercel.app" target="_blank" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Preview
+                                </a>
+                                <a href="https://github.com/shriyansh-mishra/ResumeAnalyzer" target="_blank" class="btn btn-secondary">
+                                    <i class="fab fa-github"></i>
+                                    GitHub
+                                </a>
+                            </div>
                         </div>
                     </div>
                     
                     <!-- Project 2 -->
                     <div class="project-card">
-                        <h3>Project Title 2</h3>
-                        <p>Project description will go here.</p>
-                        <div class="tech-stack">
-                            <span>Tech 1</span>
-                            <span>Tech 2</span>
-                            <span>Tech 3</span>
+                        <div class="project-image-container">
+                            <img src="assets/Project1_ss.png" alt="Google Stock Price ML Screenshot" class="project-image">
+                            <div class="project-overlay">
+                                <a href="https://github.com/shriyansh-mishra/GoogleStockPriceML" target="_blank" class="preview-btn">
+                                    <i class="fab fa-github"></i>
+                                    View Project
+                                </a>
+                            </div>
                         </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank">Live Demo</a>
-                            <a href="#" target="_blank">GitHub</a>
+                        <div class="project-content">
+                            <h3>Google Stock Price ML</h3>
+                            <p>A machine learning project to predict Google stock prices using both classical ML (Random Forest) and deep learning (LSTM) models. Includes data preprocessing, feature engineering, model training, evaluation, and investment simulation. Built with Python, pandas, scikit-learn, TensorFlow, and Keras for comprehensive financial analysis.</p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>scikit-learn</span>
+                                <span>pandas</span>
+                                <span>LSTM</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/shriyansh-mishra/GoogleStockPriceML" target="_blank" class="btn btn-primary">
+                                    <i class="fab fa-github"></i>
+                                    View Project
+                                </a>
+                                <a href="https://github.com/shriyansh-mishra/GoogleStockPriceML" target="_blank" class="btn btn-secondary">
+                                    <i class="fas fa-code"></i>
+                                    Source Code
+                                </a>
+                            </div>
                         </div>
                     </div>
                     
                     <!-- Project 3 -->
                     <div class="project-card">
-                        <h3>Project Title 3</h3>
-                        <p>Project description will go here.</p>
-                        <div class="tech-stack">
-                            <span>Tech 1</span>
-                            <span>Tech 2</span>
-                            <span>Tech 3</span>
+                        <div class="project-image-container">
+                            <img src="assets/Project1_ss.png" alt="Unofficial GfG API Screenshot" class="project-image">
+                            <div class="project-overlay">
+                                <a href="https://geekforgeekapi.onrender.com" target="_blank" class="preview-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                            </div>
                         </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank">Live Demo</a>
-                            <a href="#" target="_blank">GitHub</a>
+                        <div class="project-content">
+                            <h3>Unofficial GfG API</h3>
+                            <p>An unofficial API for GeeksforGeeks that provides programmatic access to GFG content. Features include problem extraction, user profile data, contest information, and practice problems. Built with Python Flask, web scraping, and deployed on Render. Includes comprehensive documentation and multiple endpoints for developers.</p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>Web Scraping</span>
+                                <span>HTML/CSS</span>
+                                <span>Render</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://geekforgeekapi.onrender.com" target="_blank" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="https://github.com/shriyansh-mishra/Unofficial-GfG-Api" target="_blank" class="btn btn-secondary">
+                                    <i class="fab fa-github"></i>
+                                    GitHub
+                                </a>
+                            </div>
                         </div>
                     </div>
+                    
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <div class="project-image-container">
+                            <img src="assets/Project1_ss.png" alt="URL Shortener Screenshot" class="project-image">
+                            <div class="project-overlay">
+                                <a href="https://github.com/shriyansh-mishra/22131011336" target="_blank" class="preview-btn">
+                                    <i class="fab fa-github"></i>
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>React URL Shortener</h3>
+                            <p>A URL Shortener web application built with React and TypeScript. Features include shortening up to 5 URLs at once, custom shortcodes, expiry dates, client-side redirection, statistics with click analytics, and Material UI design. Includes custom logging middleware for remote API integration.</p>
+                            <div class="tech-stack">
+                                <span>React</span>
+                                <span>TypeScript</span>
+                                <span>Material UI</span>
+                                <span>Node.js</span>
+                                <span>Express</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/shriyansh-mishra/22131011336" target="_blank" class="btn btn-primary">
+                                    <i class="fab fa-github"></i>
+                                    View Project
+                                </a>
+                                <a href="https://github.com/shriyansh-mishra/22131011336" target="_blank" class="btn btn-secondary">
+                                    <i class="fas fa-code"></i>
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="currently-working-section">
+                    <h2>🚀 Currently Working On</h2>
+                    <p class="currently-working-text">
+                        I'm currently working on several exciting projects including an advanced e-commerce platform with AI-powered recommendations, 
+                        a machine learning-based learning management system, and exploring new technologies like Next.js, Prisma, and advanced AI integration.
+                    </p>
                 </div>
             </div>
         </section>
